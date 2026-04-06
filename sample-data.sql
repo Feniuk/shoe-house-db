@@ -37,6 +37,6 @@ INSERT INTO order_details (order_id, product_id, quantity, order_price) VALUES
 
 INSERT INTO payments (order_id, amount, payment_method, status) VALUES
 (9, 300.00, 'credit_card', 'paid'),
-(10, 2500.00, 'paypal', 'pending');
+(10, 250.00, 'paypal', 'pending');
 (11, 200.00, 'crypto', 'paid');
 (12, 290.00, 'bank transfer', 'failed');

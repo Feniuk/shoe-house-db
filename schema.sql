@@ -16,7 +16,7 @@ CREATE TABLE categories (
 CREATE TABLE products (
     name VARCHAR(150) NOT NULL,
     brand VARCHAR(100),
-    price DECIMAL(10,2) NOT NULL,
+    price DECIMAL(10,2) NOT NULL CHECK (price > 0),
     product_id INT AUTO_INCREMENT PRIMARY KEY,
     category_id INT,
     FOREIGN KEY (category_id) REFERENCES categories(category_id)
