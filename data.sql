@@ -13,7 +13,8 @@ INSERT INTO products (name, brand, price, category_id) VALUES
 INSERT INTO customers (name, email, phone) VALUES
 ('Albert Einstein', 'einstein@example.com', '123456789'),
 ('El Mozart', 'tapia@example.com', '987654321'),
-('Putin Huylo', 'huylo@example.com', '555666777');
+('Putin Huylo', 'huylo@example.com', '555666777'),
+('Excellent Gradovich', 'gradovich@example.com', '123456790');
 
 INSERT INTO warehouse (product_id, size, stock_quantity) VALUES
 (1, 42, 10),

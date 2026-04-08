@@ -68,4 +68,18 @@ FROM products
 JOIN order_details 
     ON products.product_id = order_details.product_id
 GROUP BY products.name
-ORDER BY total_sold DES;
+ORDER BY total_sold DESC;
+
+
+SELECT 
+    SUM(order_details.quantity * order_details.order_price) AS top_bill,
+    customers.customer_id,
+    customers.name
+FROM customers
+JOIN orders 
+    ON customers.customer_id = orders.customer_id
+JOIN order_details 
+    ON orders.order_id = order_details.order_id
+GROUP BY customers.customer_id, customers.name
+ORDER BY top_bill DESC
+LIMIT 1;
