@@ -13,7 +13,7 @@ DELETE FROM warehouse
 WHERE stock_quantity = 0;
 
 INSERT INTO customers (name, email)
-VALUES ('Excellent Gradovich', 'gradovich@example.com');
+VALUES ('Muammar Gaddafi', 'gaddafi@example.com');
 
 
 

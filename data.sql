@@ -31,13 +31,13 @@ INSERT INTO orders (customer_id, status) VALUES
 (4, 'pending');
 
 INSERT INTO order_details (order_id, product_id, quantity, order_price) VALUES
-(9, 4, 2, 300.00),
-(10, 2, 1, 250.00),
-(11, 1, 1, 200.00),
-(12, 3, 1, 290.00);
+(1, 4, 2, 300.00),
+(2, 2, 1, 250.00),
+(3, 1, 1, 200.00),
+(4, 3, 1, 290.00);
 
 INSERT INTO payments (order_id, amount, payment_method, status) VALUES
-(9, 300.00, 'credit_card', 'paid'),
-(10, 250.00, 'paypal', 'pending');
-(11, 200.00, 'crypto', 'paid');
-(12, 290.00, 'bank transfer', 'failed');
+(1, 300.00, 'credit_card', 'paid'),
+(2, 250.00, 'paypal', 'pending'),
+(3, 200.00, 'crypto', 'paid'),
+(4, 290.00, 'bank transfer', 'failed');
